@@ -6,8 +6,8 @@ fetch("https://api.github.com/emojis").then(
 	function(data){
 		let b = document.querySelector("body")
 		for (let i in data){
-			let x = document.createElemet("img")
-			x.setAttribute("scr",data[i])
+			let x = document.createElement("img")
+			x.setAttribute("src",data[i])
 			b.appendChild(x)
 		}
 	}
